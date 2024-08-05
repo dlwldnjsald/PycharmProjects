@@ -16,18 +16,20 @@ def define_str():
 
     # 여러 줄 문자열: """, '''
     s4 = """Life is too short, You need Python.
-파이썬은 데이터 처리가 중요한 시대에서
-가장 널리 사용되는 언어입니다"""
+        파이썬은 데이터 처리가 중요한 시대에서
+        가장 널리 사용되는 언어입니다"""
 
     print(s4)
 
     # 여러 줄 문자열은 한줄 주석만 있는 파이썬에서
     # 여러 줄 주석을 사용하고자 할 때도 사용할 수 있다
-    """여러 줄 문자열을 사용한 여러 줄 주석
+    """
+    여러 줄 문자열을 사용한 여러 줄 주석
     메서드 정의 바로 아래 여러 줄 주석을 추가하면
     문서화 할 때 이용될 수 있고
     help 명령어로 해당 메서드의 주석을 볼 수 있다.
-    docstring이라 한다."""
+    docstring이라 한다.
+    """
 
     # f-string : 문자열 포맷팅 방식 중 하나
     name, age = "홍길동", 28
@@ -53,8 +55,7 @@ def string_oper():
 
     # 인덱싱
     print(str1[0], str1[1], str1[2], "...", str1[9], str1[10], str1[11])  # 정방향
-    print(str1[-12], str1[-11], str1[-10], "...",
-          str1[-3], str1[-2], str1[-1])
+    print(str1[-12], str1[-11], str1[-10], "...", str1[-3], str1[-2], str1[-1])
 
     # 문자열은 immutable -> 치환 불가
     # str1[0] = "f" # 변경 불가
@@ -258,12 +259,12 @@ def string_format():
 
 
 if __name__ == "__main__":
-    # define_str()
-    # string_oper()
-    # transform_methods()
-    # search_methods()
-    # modify_replace_methods()
-    # align_methods()
-    # split_join_method()
-    # check_methods()
-    string_format()
+     # define_str()
+     # string_oper()
+     # transform_methods()
+     # search_methods()
+     # modify_replace_methods()
+     # align_methods()
+     # split_join_method()
+     # check_methods()
+     string_format()

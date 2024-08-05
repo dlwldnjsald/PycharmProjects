@@ -42,7 +42,7 @@ def list_oper():
     # 반복 *
     print(lst * 3) #n번 반복
 
-    # append추가 vs extends확장
+    # append추가 vs extend확장
     print(cp)
     cp.append(["Java", True, 3.14159]) # 맨뒤에 요소 추가
     print(cp) #append 추가되어 출력됨
@@ -154,13 +154,58 @@ def list_methods():
     # list를 stack과 queue로 사용하기
     """
     stack: last in => first out 후입선출
-    queue: first in => first out 선입선출
+        - append: 맨 뒤에 요소 추가
+        - pop: 맨 뒤의 요소 추출
     """
+def stack_ex():
+    stack = []
+    stack.append(10)
+    print("Stack:", stack)
+    stack.append(20)
+    print("Stack:", stack)
+    stack.append(30)
+    print("Stack:", stack)
 
+    print(stack.pop())
+    print(stack.pop())
 
+    print("Stack:", stack)
 
+def queue_ex():
+    """
+    리스트를 활용한 queue 자료형 흉내내기
+    queue: first in => first out 선입선출
+        - append : 입력
+        - pop(0) : 인출
+    """
+    queue = []
+    # 입력
+    queue.append(10)
+    queue.append(20)
+    queue.append(30)
+    print("QUEUE:", queue)
+
+    print(queue.pop(0)) # 가장 앞 요소를 인출
+    print(queue.pop(0))
+
+    print("QUEUE:", queue)
+
+def loop():
+    """
+    순차 자료형의 순회
+    for 변수 in 순차형 (1가지방법) : 별도 인덱스 변수는 없음
+    """
+    words = "Life is too short, You need Python.".replace(",", "") \
+                                                .replace(".", "").split()
+    print("목록:", words)
+
+    for word in words:
+        print(word)
 
 if __name__ == "__main__":
     # define_list()
     # list_oper()
-    list_methods()
+    # list_methods()
+    # stack_ex()
+    # queue_ex()
+    loop()

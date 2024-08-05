@@ -21,7 +21,7 @@ def rel_oper():
     print("===== 비교 연산자")
     # >, >=, <, <=, ==, !=
 
-    s1 = "python";
+    s1 = "python"
     s2 = "python"
     print("문자열의 비교:", s1 == s2)
 
@@ -39,8 +39,8 @@ def rel_oper():
     print("튜플의 대소:", (1, 2, 3) > (1, 3, 4))
 
     # 동질성의 비교 ==, 동일성의 비교 is
-    a = 10;
-    b = 20;
+    a = 10
+    b = 20
     c = a
     print("a == b ?", a == b)
     print("a is b ?", a is b)
@@ -223,12 +223,12 @@ def complex_ex():
 if __name__ == "__main__":
     # 다른 모듈로 import 되는 경우 __name__ == "python_basics"
     # 직접 실행될 경우(최상위 모듈일 경우) __name__ == "__main__"
-    # arith_oper()  # 산술 연산자 연습
-    # rel_oper()  # 비교 연산자 연습
-    # var_ex()    # 변수 연습
-    # assignment_ex()  # 변수 치환 연습
-    # bool_ex()
+     # arith_oper()  # 산술 연산자 연습
+     # rel_oper()  # 비교 연산자 연습
+     # var_ex()    # 변수 연습
+     # assignment_ex()  # 변수 치환 연습
+     bool_ex()
     # type_hint()
     # int_ex()
     # float_ex()
-    complex_ex()
+    # complex_ex()
