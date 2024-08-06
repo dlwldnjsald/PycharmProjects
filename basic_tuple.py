@@ -69,6 +69,41 @@ def tuple_method():
     print("INDEX:", tp.index(20,1)) # 요소의 인덱스, 범위 제한
 
 
+def packing_unpacking():
+    """
+    튜플 패킹과 언패킹
+    """
+    # 튜플의 Packing
+    tp = (10, 20, 30, "Python") # 기본적으로 튜플 생성 방법
+    print("tp:", tp, type(tp))
+    tp = 10, 20, 30, "Python" # 괄호 안붙이고 값만 나열해도 자동 튜플로 인식
+    print("tp:", tp, type(tp))
+
+    # 튜플의 Unpacking
+    a, b, c, d = tp
+    print("a,b,c,d:", a, b, c, d)
+
+    # a, b, c = tp        # 좌변의 변수 개수 적거나
+    # a, b, c, d, e = tp  # 좌변의 변수 개수가 많을경우 모두 ValueError
+
+    # 확장 Unpacking
+    a, *b = tp  # 확장 언패킹 기호 *
+    print("a:", a, type(a))
+    print("*b:", b, type(b))
+
+    *a, b = tp
+    print("*a:", a, type(a))
+    print("b:", b, type(b))
+
+    a, *b, c = tp
+    print("a:", a, type(a))
+    print("*b:", b, type(b))
+    print("c:", c, type(c))
+
+
+
+
+
 
 
 
@@ -76,4 +111,5 @@ if __name__ == "__main__":
     #define_tuple()
     #tuple_oper()
     #tuple_assign()
-    tuple_method()
+    #tuple_method()
+    packing_unpacking()
