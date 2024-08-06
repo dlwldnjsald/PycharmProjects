@@ -1,6 +1,6 @@
 evens = { 0, 2, 4, 6, 8, 10 } # 짝수 집합
 odds = { 1, 3, 5, 7, 9 } # 홀수 집합
-numbers = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 } # 전체 집합
+numbers = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 } # 전체 집합
 mthree = { 0, 3, 6, 9 } # 3의 배수 집합
 
 
@@ -32,26 +32,68 @@ def define_set():
     lst2 = list(s)
     print("to_lst2:", lst2)
 
-
 def set_methods():
     """
     set의 메서드들
     """
+    print("numbers:",numbers, len(numbers))
+    numbers.add(10)
+    print("numbers:", numbers, len(numbers))
+    numbers.add(10) # 중복을 허용하지 않는 자료형
+    print("numbers:", numbers, len(numbers))
+
+    print("evens:", evens)
+    evens.add(3) # 추가
+    print("evens:", evens)
+    evens.discard(3) # 삭제
+    print("evens:", evens)
+    evens.discard(3) # 삭제
+    # discard 는 없어도 오류없이 무시
+
+    if 3 in evens:
+        evens.remove(3) # 삭제할 데이터 없으면 KeyError
+    evens.update({10})
+    print("evens:", evens)
 
 
+def set_oper():
+    """
+    set의 집합 연산
+    """
+    numbers.add(10)
+    print(numbers)
+    print(evens, odds)
+
+    # 합집합 : |, union
+    print("합집합:", evens | odds == numbers) # 짝수 집합 합집합 홀수 집합 == 전체 집합
+    print("합집합:",evens.union(odds) == numbers)
+
+    # 교집합 : &,  intersection
+    print("교집합:",evens & mthree == {0,6})
+    print("교집합:",evens.intersection(mthree) == {0,6})
+
+    # 차집합 : -, difference
+    print("차집합:",numbers - odds == evens) # 전체 집합 차집합 홀수 집합 == 짝수 집합
+    print("차집합:",numbers.difference(odds) == evens)
+
+    # 판별 함수
+    print(numbers.issuperset(evens), numbers.issuperset(odds)) #부모 집합 여부 판별
+    print(evens.issubset(numbers), odds.issubset(numbers))  #부분 집합 여부 판별
 
 
-
-
-
-
-
-
+def loop():
+    # for 변수 in 순차자료형
+    for num in numbers:
+        print(num, end="\t")
+    else:
+        print("else")
 
 
 
 
 
 if __name__ == "__main__":
-     define_set()
-     #set_methods()
+     # define_set()
+     # set_methods()
+     # set_oper()
+      loop()
