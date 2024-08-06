@@ -1,7 +1,7 @@
 
 def define_dict():
     """
-    dict 사전의 정의
+    dict 사전의 정의_
     """
     # 타입 함수를 이용한 생성
     dct = dict() # 빈 dict
