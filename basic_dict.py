@@ -120,7 +120,7 @@ def using_dict():
 
 def loop():
     """
-    사전의 순회(loop) : 기본적으로 keySet 대상
+    사전의 순회(loop) : 기본적으로 keySet 대상//
     """
 
     phones = {
