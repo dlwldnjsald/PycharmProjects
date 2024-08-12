@@ -70,7 +70,7 @@ def assignment_ex():
     print(a, b)
     print("namespace:", dir())
 
-    # 여러 변수를 한꺼번에 할당
+    # 여러 변수를 한꺼번에 할당/
     c, d = 3.5, 5.3
     print("c, d = ", c, d)
     # 값의 교환 (Swap)

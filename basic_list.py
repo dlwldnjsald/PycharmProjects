@@ -175,7 +175,7 @@ def queue_ex():
     """
     리스트를 활용한 queue 자료형 흉내내기
     queue: first in => first out 선입선출
-        - append : 입력
+        - append : 입력/
         - pop(0) : 인출
     """
     queue = []

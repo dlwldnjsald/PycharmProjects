@@ -73,7 +73,7 @@ def packing_unpacking():
     """
     튜플 패킹과 언패킹
     """
-    # 튜플의 Packing
+    # 튜플의 Packing/
     tp = (10, 20, 30, "Python") # 기본적으로 튜플 생성 방법
     print("tp:", tp, type(tp))
     tp = 10, 20, 30, "Python" # 괄호 안붙이고 값만 나열해도 자동 튜플로 인식

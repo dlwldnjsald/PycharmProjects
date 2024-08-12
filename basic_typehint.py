@@ -5,7 +5,7 @@ name : str = "홍길동"
 
 age = "장길산"
 
-# 함수 매개변수 및 반환값 타입 힌트
+# 함수 매개변수 및 반환값 타입 힌트/
 def greet(name: str) -> str:    # str 매개변수를 입력 -> str 출력
     return f"Hello, {name}"
 
